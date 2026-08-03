@@ -58,6 +58,7 @@ Plus a **Calendar** — not a space, but a PSA-aware component: it schedules rea
 
 | | |
 |---|---|
+| `/psa help` | What PSA is, every command, where things live — works before setup too |
 | `/psa setup` | Interview → config → scaffold all spaces → tour (re-run anytime to change answers) |
 | `/psa` | Status: capacity, projects, systems needing review, task pipeline |
 | `/psa projects` / `systems` / `archives` | List one lifecycle stage |

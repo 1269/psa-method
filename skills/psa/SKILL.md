@@ -1,6 +1,6 @@
 ---
 name: psa
-description: Run your PSA (Projects, Systems, Archives) productivity system — a lifecycle-based structure across four spaces (File Share, Second Brain, Task Manager, Journal) plus a PSA-aware calendar. Use for setting up the system from scratch (/psa setup), status overviews, navigating projects and systems, creating/archiving/converting projects, health reviews, mirroring tasks into agent-ready markdown files, arming task briefs, and scheduling work into available time blocks. Triggers on "/psa", "set up my PSA system", "new PSA project", "archive this project", "PSA status", "psa review", "turn this project into a system", "mirror my tasks into files", "arm this task", "add context to this task", "schedule my ready tasks", "block time for my tasks".
+description: Run your PSA (Projects, Systems, Archives) productivity system — a lifecycle-based structure across four spaces (File Share, Second Brain, Task Manager, Journal) plus a PSA-aware calendar. Use for setting up the system from scratch (/psa setup), status overviews, navigating projects and systems, creating/archiving/converting projects, health reviews, mirroring tasks into agent-ready markdown files, arming task briefs, and scheduling work into available time blocks. Triggers on "/psa", "set up my PSA system", "new PSA project", "archive this project", "PSA status", "psa review", "turn this project into a system", "mirror my tasks into files", "arm this task", "add context to this task", "schedule my ready tasks", "block time for my tasks", "psa help", "what does the PSA system do", "how does PSA work".
 ---
 
 # PSA — Projects, Systems, Archives
@@ -10,7 +10,7 @@ One method, one command. Navigate and manage the PSA framework across all four s
 ## Step zero — every invocation
 
 1. Read `~/.psa/config.json`.
-2. **If it doesn't exist** (and the invoked command isn't `setup` itself): the system isn't set up. Say so, and offer to run `/psa setup`. Run nothing else without a config.
+2. **If it doesn't exist** (and the invoked command isn't `setup` or `help`): the system isn't set up. Say so, and offer to run `/psa setup`. Run nothing else without a config.
 3. Resolve every path in the config (expand `~`). Note each tool's **access tier** — it governs how you touch that tool for the rest of the session:
    - `automated` — drive the tool directly via its adapter (see [references/adapters.md](references/adapters.md))
    - `guided` — give the user exact, step-by-step instructions for their tool, then wait for confirmation before continuing
@@ -20,6 +20,7 @@ One method, one command. Navigate and manage the PSA framework across all four s
 
 | Command | What it does | Reference |
 |---|---|---|
+| `/psa help` | Explain the system and list every command | defined below — no reference file |
 | `/psa setup` | Interview → write config → scaffold all four spaces (idempotent, adoption-safe) → tour | [references/setup.md](references/setup.md) |
 | `/psa` | Status overview: capacity, projects, systems needing review | [references/status.md](references/status.md) |
 | `/psa projects` \| `systems` \| `archives` | List one stage with health/cadence details | [references/status.md](references/status.md) |
@@ -33,6 +34,18 @@ One method, one command. Navigate and manage the PSA framework across all four s
 | `/psa schedule` | Propose time blocks for ready work; write to calendar per tier | [references/schedule.md](references/schedule.md) |
 
 Read the reference file for the invoked command **before** executing it. For the method itself (stages, spaces, doctrine), fetch [docs/method.md in the psa-method repo](https://github.com/1269/psa-method/blob/main/docs/method.md) — the installed skill folder contains only the references and templates.
+
+## /psa help
+
+Works with or without a config — no reference file needed; everything it shows is in this document. Present, in order:
+
+1. **What PSA is**, two sentences: everything you own lives in one of three lifecycle stages — an active **Project** (finite), an ongoing **System** (review cadence), or an **Archive** (kept for recall). That structure mirrors across four spaces — File Share (working), Second Brain (thinking), Task Manager (doing), Journal (capture) — plus a PSA-aware Calendar, so both you and your AI agents always know where things live.
+2. **The command table** above, with the one-line descriptions.
+3. **The daily loop**, one line: capture → process → work → `/psa review` weekly → finish every project into an archive or a system.
+4. **Current state**: if a config exists, say where each space lives (one line each) and suggest `/psa` for status; if not, say so and suggest `/psa setup`.
+5. **Learn more**: the [method doc](https://github.com/1269/psa-method/blob/main/docs/method.md) and [walkthrough](https://github.com/1269/psa-method/blob/main/examples/walkthrough.md).
+
+Keep it to one screen — help is orientation, not the manual.
 
 ## Conventions (apply to every command)
 
