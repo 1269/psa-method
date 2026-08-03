@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "capacity": { "max": 15 },
+  "spaces": {
+    "file_share": { "path": "~/Documents" },
+    "second_brain": { "path": "~/Documents/Second Brain", "tool": "obsidian" },
+    "task_manager": { "tool": "things", "access": "guided", "notes": "" },
+    "journal": { "tool": "evernote", "access": "guided", "notes": "" }
+  },
+  "calendar": { "tool": "google-calendar", "access": "automated", "notes": "" }
+}
