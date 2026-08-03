@@ -88,6 +88,7 @@ PSA is a baseline, deliberately. **Fork this repo.** Rename spaces, add verbs, w
 
 - **Shared PSA** — connected systems across people: shared project views without overwriting each other, private second brains intact.
 - **Journal routing** — `/psa process-journal`: split a raw entry into items and file each where it belongs, behind a confirmation gate.
+- **More agents** — support for other coding agents like Codex and Gemini, coming soon. The method is already agent-agnostic (plain folders, plain markdown, one config file); this brings the skill itself to their formats.
 - **More adapters** — community-contributed automated-tier examples beyond OmniFocus.
 
 ## License

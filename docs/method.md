@@ -135,6 +135,7 @@ The daily loop is small:
 
 - **Shared PSA** — connecting multiple people's PSA systems: shared project views without overwriting each other, while everyone keeps their own private Second Brain. The files-first doctrine is what makes this mergeable.
 - **Journal routing** — a `/psa process-journal` verb that reads your latest entry, splits it into items, and proposes a destination for each (task, brief note, idea, archive) behind a confirmation gate.
+- **More agents** — support for other coding agents like Codex and Gemini, coming soon. The structure is already agent-agnostic — any agent that can read files can navigate a PSA system today; this ports the skill's instructions to their native formats.
 - **More adapters** — worked automated-tier examples beyond OmniFocus, as the community contributes them.
 
 ## Make it yours
