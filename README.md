@@ -86,7 +86,7 @@ PSA is a baseline, deliberately. **Fork this repo.** Rename spaces, add verbs, w
 
 ## Roadmap
 
-- **Shared PSA** — connected systems across people: shared project views without overwriting each other, private second brains intact.
+- **Shared PSA** — PSA at company scale, now designed: the method repeats per **scope** (personal, company, …). A company scope keeps collab docs and assets on a shared drive, code *and* the shared Second Brain in the git org — a brain repo every member clones, carrying the scope's Convention as agent instructions so everyone's AIs load the same ground truth. A future `/psa audit` checks each machine against that Convention. Full design: [docs/shared-psa.md](docs/shared-psa.md).
 - **Journal routing** — `/psa process-journal`: split a raw entry into items and file each where it belongs, behind a confirmation gate.
 - **More agents** — support for other coding agents like Codex and Gemini, coming soon. The method is already agent-agnostic (plain folders, plain markdown, one config file); this brings the skill itself to their formats.
 - **More adapters** — community-contributed automated-tier examples beyond OmniFocus.

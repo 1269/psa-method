@@ -133,7 +133,7 @@ The daily loop is small:
 
 ## Roadmap
 
-- **Shared PSA** — connecting multiple people's PSA systems: shared project views without overwriting each other, while everyone keeps their own private Second Brain. The files-first doctrine is what makes this mergeable.
+- **Shared PSA** — PSA at company scale, now designed ([docs/shared-psa.md](shared-psa.md)): the method repeats per **scope**. A company scope's working layer is a shared drive, its thinking layer a git-hosted brain repo every member clones ([ADR-0004](adr/0004-shared-brain-is-a-git-repo.md)) — private personal Second Brains intact, shared work counting against personal capacity via pointer entries. The files-first doctrine is what makes this mergeable, and it's why the scope's Convention can ship as agent instructions every member's AI loads automatically.
 - **Journal routing** — a `/psa process-journal` verb that reads your latest entry, splits it into items, and proposes a destination for each (task, brief note, idea, archive) behind a confirmation gate.
 - **More agents** — support for other coding agents like Codex and Gemini, coming soon. The structure is already agent-agnostic — any agent that can read files can navigate a PSA system today; this ports the skill's instructions to their native formats.
 - **More adapters** — worked automated-tier examples beyond OmniFocus, as the community contributes them.

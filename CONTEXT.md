@@ -54,6 +54,24 @@ _Avoid_: diary, log
 A PSA-aware component — not a space (it holds no Projects/Systems/Archives structure). It schedules work into your available time blocks and can be driven by agents.
 _Avoid_: fifth space, scheduler
 
+### The scopes
+
+**Scope**:
+One complete PSA structure plus the people who share it. Every scope has its own spaces, indexes, archives, and review cadences; a person can belong to several (personal, company, side-business). Spaces exist per scope — your personal Second Brain and a company's shared one are two instances of the same space.
+_Avoid_: workspace, tenant, org
+
+**Convention**:
+A scope's published expectations for its members' machines — local layout, required clones, expected tool connections. Ships as agent instructions in the scope's Second Brain, so every member's agent loads the same rules.
+_Avoid_: policy, standard, guidelines
+
+**Audit**:
+The check of a machine against the Conventions of the scopes it belongs to — health of the structure, where Review is health of the work.
+_Avoid_: conformance check, lint
+
+**Pointer Entry**:
+A one-line entry in a personal index marking active work that lives in another scope. It counts against personal capacity and links to the canonical Brief; the owning scope keeps the real record.
+_Avoid_: mirror, copy, shortcut
+
 ### The files
 
 **Brief**:
