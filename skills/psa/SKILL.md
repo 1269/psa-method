@@ -1,6 +1,6 @@
 ---
 name: psa
-description: Run your PSA (Projects, Systems, Archives) productivity system — a lifecycle-based structure across four spaces (File Share, Second Brain, Task Manager, Journal) plus a PSA-aware calendar. Use for setting up the system from scratch (/psa setup), status overviews, navigating projects and systems, creating/archiving/converting projects, health reviews, mirroring tasks into agent-ready markdown files, arming task briefs, and scheduling work into available time blocks. Triggers on "/psa", "set up my PSA system", "new PSA project", "archive this project", "PSA status", "psa review", "turn this project into a system", "mirror my tasks into files", "arm this task", "add context to this task", "schedule my ready tasks", "block time for my tasks", "psa help", "what does the PSA system do", "how does PSA work".
+description: Run your PSA (Projects, Systems, Archives) productivity system — a systems-first structure across four spaces (File Share, Second Brain, Task Manager, Journal) plus a PSA-aware calendar. Use for setting up the system from scratch (/psa setup), status overviews, navigating projects and systems, creating/archiving/converting projects, health reviews, mirroring tasks into agent-ready markdown files, arming task briefs, and scheduling work into available time blocks. Triggers on "/psa", "set up my PSA system", "new PSA project", "archive this project", "PSA status", "psa review", "turn this project into a system", "mirror my tasks into files", "arm this task", "add context to this task", "schedule my ready tasks", "block time for my tasks", "psa help", "what does the PSA system do", "how does PSA work".
 ---
 
 # PSA — Projects, Systems, Archives
@@ -39,7 +39,7 @@ Read the reference file for the invoked command **before** executing it. For the
 
 Works with or without a config — no reference file needed; everything it shows is in this document. Present, in order:
 
-1. **What PSA is**, two sentences: everything you own lives in one of three lifecycle stages — an active **Project** (finite), an ongoing **System** (review cadence), or an **Archive** (kept for recall). That structure mirrors across four spaces — File Share (working), Second Brain (thinking), Task Manager (doing), Journal (capture) — plus a PSA-aware Calendar, so both you and your AI agents always know where things live.
+1. **What PSA is**, two sentences: PSA is systems-first — ongoing **Systems** (no end date, maintained through automated process on a review cadence) are the durable unit, **Projects** are outcome-driven work with as many phases as needed that ultimately ends (archived or converted into a system), and **Archives** keep finished work for recall. That structure mirrors across four spaces — File Share (working), Second Brain (thinking), Task Manager (doing), Journal (capture) — plus a PSA-aware Calendar, so both you and your AI agents always know where things live.
 2. **The command table** above, with the one-line descriptions.
 3. **The daily loop**, one line: capture → process → work → `/psa review` weekly → finish every project into an archive or a system.
 4. **Current state**: if a config exists, say where each space lives (one line each) and suggest `/psa` for status; if not, say so and suggest `/psa setup`.

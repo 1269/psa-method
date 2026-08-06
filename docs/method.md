@@ -1,31 +1,32 @@
 # The PSA Method
 
-PSA (Projects, Systems, Archives) is a lifecycle-based approach to organizing work, knowledge, and assets. It enforces focus through a strict project cap, connects every project to a goal, and leaves behind durable systems instead of piles of finished work.
+PSA (Projects, Systems, Archives) is a **systems-first** approach to organizing work, knowledge, and assets. The end state it optimizes for is a set of ongoing systems that largely maintain themselves — through automated process, recurring maintenance, and agents working on a review cadence. Projects exist to build and improve those systems: outcome-driven, with as many steps and phases as they need, but they ultimately end. The method enforces focus through a strict project cap and leaves behind durable systems instead of piles of finished work.
 
 It is also built to be **agent-ready**: every part of the structure is legible to AI agents — plain folders, plain markdown, one config file — so an agent can navigate your whole working world, create projects, arm tasks, and schedule work without guessing where anything lives.
 
 ## The three stages
 
-Everything you own is in exactly one of three lifecycle stages.
+Everything you own is in exactly one of three lifecycle stages. The acronym and the folder numbering (`1_Projects`, `2_Systems`, `3_Archives`) follow the *lifecycle* order — work enters as a project, matures into a system, retires into the archive — but the *thinking* runs systems-first: you start from the system, and every project serves one.
+
+### Systems
+
+The method's center of gravity. Ongoing areas of responsibility with no end date — maintained, reviewed, and improved continuously, with maintenance pushed toward automated process wherever possible.
+
+- **Examples**: your productivity routines, content production, health tracking, finances, your home lab, this very PSA setup
+- **Review cadence**: each system declares its own pace — weekly, monthly, quarterly, or "as needed"
+- **Automate the maintenance**: a healthy system trends toward running itself — recurring tasks, runbooks an agent can execute, reviews on cadence. If keeping a system alive demands fresh human decisions every week, that's a signal to spin up a project to improve it.
+- **Key distinction**: systems don't finish; they evolve. A project might create or improve a system, but the system outlives the project.
+- **Systems don't own transient work**: a system holds recurring infrastructure (runbooks, strategy, reusable assets). One-off deliverables live in Projects, even when produced under a system's umbrella.
 
 ### Projects
 
-Finite, outcome-driven work. Every project has a clear goal, a plan to get there, and a system to track progress. Projects die — either **archived** (outcome achieved or abandoned) or **converted** into a System.
+Outcome-driven work — potentially many steps and phases, but it ultimately ends. Every project has a clear goal, a plan to get there, and a system to track progress. Projects die — either **archived** (outcome achieved or abandoned) or **converted** into a System.
 
 **The core principle:** a project exists either to *build a new system* or to *maintain an existing one*. If a project doesn't connect to a system, question why it's on the list. The point of finite work is to leave behind durable, sustainable systems.
 
 - **Capacity**: 8–15 active projects, hard cap (you choose your number during setup). At the cap, something must finish before something new starts.
 - **Structure**: each project has a Brief (GPS framework) in the Second Brain, a working folder in the File Share, and a project in the Task Manager.
 - **Lifecycle**: Idea → Active Project → Completed (Archive) or Converted (System)
-
-### Systems
-
-Ongoing areas of responsibility with no end date — maintained, reviewed, and improved continuously. They are the infrastructure that makes projects possible.
-
-- **Examples**: your productivity routines, content production, health tracking, finances, your home lab, this very PSA setup
-- **Review cadence**: each system declares its own pace — weekly, monthly, quarterly, or "as needed"
-- **Key distinction**: systems don't finish; they evolve. A project might create or improve a system, but the system outlives the project.
-- **Systems don't own transient work**: a system holds recurring infrastructure (runbooks, strategy, reusable assets). One-off deliverables live in Projects, even when produced under a system's umbrella.
 
 ### Archives
 

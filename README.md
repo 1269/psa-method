@@ -1,13 +1,14 @@
 # PSA — Projects, Systems, Archives
 
-**A lifecycle-based productivity method your AI agents can run with you.**
+**A systems-first productivity method your AI agents can run with you.**
 
-Everything you own — files, notes, tasks, journal entries — lives in one of three lifecycle stages: it's an active **Project** (finite, outcome-driven), an ongoing **System** (no end date, review cadence), or an **Archive** (kept for recall and reuse). That structure is mirrored across every tool you use, in plain folders and plain markdown — which means an AI agent can navigate your whole working world without guessing where anything lives.
+PSA is **systems-first thinking**: the durable unit of your working life is the **System** — ongoing, no end date, maintained through automated process on a review cadence. **Projects** are how systems get built and improved — outcome-driven work with as many steps and phases as it needs, but it ultimately ends. What's finished becomes an **Archive**, kept for recall and reuse. Everything you own — files, notes, tasks, journal entries — lives in exactly one of those three stages, mirrored across every tool you use in plain folders and plain markdown — which means an AI agent can navigate your whole working world without guessing where anything lives.
 
 PSA ships as a single [Claude Code](https://claude.com/claude-code) skill: `/psa`. One command sets the whole thing up, and the same command runs it day to day.
 
 ## Why this exists
 
+- **Systems over output.** The goal isn't to finish more projects; it's to end up with systems that largely run themselves — automated maintenance, agents working on a cadence, less of you required over time. Projects are the interventions that get you there.
 - **Focus by design.** A hard cap on active projects (recommended 8–15). New work requires finishing old work.
 - **Nothing just fades out.** Every project ends deliberately: archived, or **converted** into a system with a review cadence. Finished work leaves behind infrastructure, not clutter.
 - **Agent-ready by construction.** Briefs, indexes, and task files are markdown with a small, stable contract. Your agents read the same files you do — and `/psa add-context` expands any task into a self-contained brief an agent can execute cold.

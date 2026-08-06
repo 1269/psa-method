@@ -1,6 +1,6 @@
 # PSA Method
 
-The shared language of the PSA (Projects, Systems, Archives) method — a lifecycle-based way to organize work, knowledge, and assets so that both you and your AI agents can navigate everything you own.
+The shared language of the PSA (Projects, Systems, Archives) method — a systems-first way to organize work, knowledge, and assets so that both you and your AI agents can navigate everything you own.
 
 This file is a glossary: for each concept, the term to use and the near-synonyms to avoid (`_Avoid_`), so you, your docs, and your agents all mean the same thing by the same word.
 
@@ -8,13 +8,17 @@ This file is a glossary: for each concept, the term to use and the near-synonyms
 
 ### The lifecycle
 
-**Project**:
-A finite piece of outcome-driven work. A project exists either to build a new system or to maintain an existing one, and it ends — completed into Archives or converted into a System.
-_Avoid_: initiative, workstream, epic
+**Systems-first**:
+The method's orientation. The durable unit of work is the System; projects are finite interventions that build or improve systems. Success is measured by the systems left running, not the projects completed.
+_Avoid_: project-driven, goal-driven
 
 **System**:
-An ongoing area of responsibility with no end date. Systems are maintained on a review cadence and outlive the projects that create them.
+An ongoing area of responsibility with no end date — the method's center of gravity. Systems are maintained through automated process on a review cadence and outlive the projects that create them.
 _Avoid_: area, domain, department
+
+**Project**:
+An outcome-driven piece of work — potentially many steps and phases, but it ultimately ends: completed into Archives or converted into a System. A project exists either to build a new system or to maintain an existing one.
+_Avoid_: initiative, workstream, epic
 
 **Archive**:
 Completed, retired, or reference material — kept for recall, learning, and reuse, and removed from active surfaces.
