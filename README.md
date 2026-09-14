@@ -4,6 +4,8 @@
 
 PSA is **systems-first thinking**: the durable unit of your working life is the **System** — ongoing, no end date, maintained through automated process on a review cadence. **Projects** are how systems get built and improved — outcome-driven work with as many steps and phases as it needs, but it ultimately ends. What's finished becomes an **Archive**, kept for recall and reuse. Everything you own — files, notes, tasks, journal entries — lives in exactly one of those three stages, mirrored across every tool you use in plain folders and plain markdown — which means an AI agent can navigate your whole working world without guessing where anything lives.
 
+**Who it's for:** teams inside an AI-first company that need one productivity method their people and their agents share. It works just as well for one person, and that's where most people start; [Shared PSA](docs/shared-psa.md) is how one person's setup becomes the team's.
+
 PSA ships as a single [Claude Code](https://claude.com/claude-code) skill: `/psa`. One command sets the whole thing up, and the same command runs it day to day.
 
 ## Why this exists
