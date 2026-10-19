@@ -5,7 +5,8 @@ Read-mostly commands. All paths come from the config; `<sb>` = second_brain path
 ## `/psa` — status overview
 
 1. Read the three indexes: `<sb>/1 Projects/projects.md`, `<sb>/2 Systems/systems.md`, `<sb>/3 Archives/archives.md`.
-2. Count active projects. If the task manager tier is `automated`, count active projects there too and note any mismatch with the index. If `guided`/`markdown`, the index is the source of truth.
+2. Count active projects. If the task manager tier is `automated`, count active projects there too and note any mismatch with the index. If `guided`/`markdown`, the index is the source of truth. The cap counts cross-system projects only; system-born projects are counted per system in the next step.
+   - **Per-system counting.** For each system descriptor in `<sb>/2 Systems/*/` that declares a `**Work-in-progress:**` line (namespace, limit, optional brief file), look in `<fs>/1_Projects/<namespace>/`. Count the folders that carry a brief (default `project.md`, or the file the line declares) and report `<n> / <limit>`. List folders without a brief as **untracked**; they do not count.
 3. Count task files by status across `<sb>/1 Projects/*/tasks/*.md` (grep frontmatter `status:`): how many `backlog` (skeletons, not yet armed), `ready` (armed), `in-progress`.
 4. Present:
 
@@ -16,6 +17,7 @@ Read-mostly commands. All paths come from the config; `<sb>` = second_brain path
 |---|---|
 | Active projects | X / <capacity.max> |
 | Capacity | Green (< max-3) / Yellow (max-3 … max-1) / Red (at max) |
+| `<namespace>` (one row per declared system) | n / <limit> · untracked: <folder names, or none> |
 | Systems | N active — M past review cadence |
 | Task pipeline | X backlog · Y ready · Z in progress |
 
@@ -48,7 +50,7 @@ Run every check, then present findings as an actionable list — each finding wi
 
 1. **Capacity** — active project count vs `capacity.max`.
 2. **Stale briefs** — any `Brief.md` not modified in 30+ days (file mtime).
-3. **Orphaned folders and index drift** — `<fs>/1_Projects/*` and `<fs>/2_Systems/*` with no matching Second Brain folder, and vice versa (match loosely: kebab/space-insensitive). Also diff `<sb>/1 Projects/*/` and `<sb>/2 Systems/*/` against their indexes — a folder created by hand is invisible to capacity counts and pickers until it's indexed.
+3. **Orphaned folders and index drift** — `<fs>/1_Projects/*` and `<fs>/2_Systems/*` with no matching Second Brain folder, and vice versa (match loosely: kebab/space-insensitive). A folder directly under `<fs>/1_Projects/` that a system descriptor declares as a namespace (its `**Work-in-progress:**` line) is legitimate, not an orphan; check the project folders inside it by the per-system count instead. Also diff `<sb>/1 Projects/*/` and `<sb>/2 Systems/*/` against their indexes — a folder created by hand is invisible to capacity counts and pickers until it's indexed.
 4. **Missing descriptors** — `<sb>/2 Systems/*/` folders without their `{name}.md`.
 5. **Task-manager drift** — projects in the task manager missing from `projects.md` or vice versa. Per tier: `automated` — diff directly; `guided` — ask the user to paste their project list and diff that (skip gracefully if declined); `markdown` — nothing to drift, skip.
 6. **Archive candidates** — projects whose Brief says done, whose task-manager project is completed, or with zero open tasks and no activity in 30+ days.

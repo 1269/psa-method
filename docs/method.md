@@ -16,7 +16,30 @@ The method's center of gravity. Ongoing areas of responsibility with no end date
 - **Review cadence**: each system declares its own pace — weekly, monthly, quarterly, or "as needed"
 - **Automate the maintenance**: a healthy system trends toward running itself — recurring tasks, runbooks an agent can execute, reviews on cadence. If keeping a system alive demands fresh human decisions every week, that's a signal to spin up a project to improve it.
 - **Key distinction**: systems don't finish; they evolve. A project might create or improve a system, but the system outlives the project.
-- **Systems don't own transient work**: a system holds recurring infrastructure (runbooks, strategy, reusable assets). One-off deliverables live in Projects, even when produced under a system's umbrella.
+- **Systems don't own transient work**: a system holds recurring infrastructure (runbooks, strategy, reusable assets). One-off deliverables live in Projects, even when produced under a system's umbrella. A system that produces outputs as part of normal use follows the rules in [Outputs](#outputs) below.
+
+#### Outputs
+
+An **output** is a thing a system produces when you use it: a video, a report, a deck, a drawing. Where it lives depends on how big it is and whether it ships on its own.
+
+- **Effort threshold**: an output that ships on its own and takes more than about a day of work becomes a **system-born project**. Anything smaller is a task inside the system's standing work.
+- **Support wins over effort**: a **supporting material** is an output that exists only to serve another output (a drawing for a video, a deck for a talk). It is never a project, however long it takes. The effort threshold applies only to things that ship on their own.
+- **Supporting materials live with their parent**, in an `assets/` sub-folder of the thing they support, and archive with it.
+- **Orphan supporting materials go to the relationship they serve**: a deck for a meeting with a client or prospect lives under that client's folder in `2_Systems/`. If the meeting grows into an engagement, the engagement gets its own project and the deck copies forward.
+- **Namespace**: a system-born project lives in a per-system folder, `1_Projects/<system-namespace>/<slug>/`. The folder name shows which system it belongs to.
+- **Counted by the system, not the global cap**: system-born projects sit under the parent system's own work-in-progress limit. The 8-15 cap counts only cross-system projects. A series folder counts as one unit; if episodes need separate tracking, they become sibling folders and the series folder shrinks to shared assets.
+- **Brief**: the default brief is a `project.md` in the project folder, with frontmatter fields `system`, `status`, `quarterly_quest` (if any), `task_manager_id`, and `published_url`. A system may declare a different brief file and add its own fields. No Second Brain Brief is created for a system-born project.
+- **Doing layer**: one task per system-born project, with subtasks, under the system's standing project in your task manager. Do not create a new task manager project per output. Completing that task is the archive trigger.
+- **Promote on second use**: the first time a supporting material is reached for from a different project, move it to the owning system's `assets/`, and leave one line in the originating project's brief pointing at the new path. No stub files, no symlinks.
+- **Archive**: a shipped system-born project moves to `3_Archives/completed-projects/<system-namespace>/<slug>/`. The deliverable stays in the archive; reusing a shipped final later is just the promote rule.
+
+**Declaring a system's limit.** A system declares its namespace and limit with one line in its descriptive file, for example:
+
+```
+**Work-in-progress:** namespace `1_Projects/videos/`, limit 6, brief `script.md`
+```
+
+The brief part is optional and defaults to `project.md`. `/psa` reads this line to report work-in-progress per system. Only folders that carry a brief count toward the limit; folders without one are listed as **untracked** and do not count.
 
 ### Projects
 
@@ -24,7 +47,7 @@ Outcome-driven work — potentially many steps and phases, but it ultimately end
 
 **The core principle:** a project exists either to *build a new system* or to *maintain an existing one*. If a project doesn't connect to a system, question why it's on the list. The point of finite work is to leave behind durable, sustainable systems.
 
-- **Capacity**: 8–15 active projects, hard cap (you choose your number during setup). At the cap, something must finish before something new starts.
+- **Capacity**: 8–15 active projects, hard cap (you choose your number during setup). At the cap, something must finish before something new starts. System-born projects (see [Outputs](#outputs)) are counted by their system's own limit, not this cap.
 - **Structure**: each project has a Brief (GPS framework) in the Second Brain, a working folder in the File Share, and a project in the Task Manager.
 - **Lifecycle**: Idea → Active Project → Completed (Archive) or Converted (System)
 
@@ -121,6 +144,8 @@ The File Share and Second Brain are always file-based. The Second Brain must be 
 ## Where finished things live
 
 A finished website, app, or deliverable belongs under the **system that will maintain it** — the folder of whichever system it serves. A project *builds* the thing; on completion, the durable home is the system folder. Repos live on your git host (link or nest them under the system folder); large binary assets live in the File Share; the Second Brain holds the thinking.
+
+That holds for things that are *maintained*. An output that ships and is *done* (a video, a talk) archives with its project at `3_Archives/completed-projects/<system-namespace>/<slug>/`, as a system-born project does.
 
 ## Working the method
 
